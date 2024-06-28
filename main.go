@@ -1,7 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"github.com/Nezent/GoCrud/config"
+	"github.com/Nezent/GoCrud/routes"
+	"github.com/gin-gonic/gin"
+)
 
 func main() {
-	fmt.Println("Hello")
+	router := gin.New()
+	config.ConnectDB()
+	routes.AccountRoute(router)
+	router.Run(":8080")
 }
