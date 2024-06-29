@@ -1,8 +1,8 @@
-# 🚀 CRUD API Project with Golang, PostgreSQL, Gin, and GORM
+# 🚀 Simple Bank CRUD API Project with Golang, PostgreSQL, Gin, and GORM
 
 <img src="https://user-images.githubusercontent.com/25181517/192149581-88194d20-1a37-4be8-8801-5dc0017ffbbe.png" alt="Golang" height="240"/> <img src="https://cdn.iconscout.com/icon/free/png-256/postgresql-11-1175122.png" alt="PostgreSQL" height="240"/>
 
-Welcome to the CRUD API project! This project demonstrates a robust and scalable backend service using Golang, PostgreSQL, Gin, and GORM. The service includes essential features like email verification, password hashing, and error handling.
+Welcome to the Simple Bank CRUD API project! This project demonstrates a robust and scalable backend service using Golang, PostgreSQL, Gin, and GORM. The service includes essential features like email verification, password hashing, and error handling, designed to manage a simple banking system.
 
 ## Table of Contents
 
@@ -26,8 +26,8 @@ Welcome to the CRUD API project! This project demonstrates a robust and scalable
 
 ### Prerequisites
 
-- Go (1.16+)
-- PostgreSQL
+- Go (1.21.5)
+- PostgreSQL (16.1)
 - Git
 
 ### Installation
@@ -102,14 +102,18 @@ The server will start on http://localhost:8080.
     ```
 
 
+
 ## To-Do
 
-- [x] Implement CRUD operations
-- [x] Integrate UUID as Primary Key
-- [x] Set up email verification with Regular Expression
-- [x] Add password hashing
-- [ ] Include error handling
-- [ ] **Implement JWT authentication** 🔐
-- [ ] **Add rate limiting** 🚀
-- [ ] **Improve documentation with detailed examples** 📚
+- [x] Implement CRUD operations ✅
+- [x] Integrate UUID as Primary Key 🆔
+- [x] Set up email verification with Regular Expression 📧
+- [x] Add password hashing 🔒
+- [ ] Include error handling 🛠️
+- [ ] Account balance addition 💰
+- [ ] Transfer balance between accounts 🔄
+- [ ] Implement JWT authentication 🔐
+- [ ] Add rate limiting 🚀
+- [ ] Improve documentation with detailed examples 📚
+
 
