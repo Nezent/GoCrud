@@ -85,6 +85,12 @@ The server will start on http://localhost:8080.
     GET /api/v1/resources/
     ```
 
+- **Read Account By ID**
+    ```
+    GET /api/v1/resources/:id
+    ```
+
+
 - **Update Account**
     ```
     PUT /api/v1/resources/:id
