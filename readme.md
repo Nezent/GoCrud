@@ -1,6 +1,6 @@
 # 🚀 CRUD API Project with Golang, PostgreSQL, Gin, and GORM
 
-![Golang](https://raw.githubusercontent.com/github/explore/main/topics/go/go.png) ![PostgreSQL](https://cdn.iconscout.com/icon/free/png-256/postgresql-11-1175122.png)
+<img src="https://user-images.githubusercontent.com/25181517/192149581-88194d20-1a37-4be8-8801-5dc0017ffbbe.png" alt="Golang" height="240"/> <img src="https://cdn.iconscout.com/icon/free/png-256/postgresql-11-1175122.png" alt="PostgreSQL" height="240"/>
 
 Welcome to the CRUD API project! This project demonstrates a robust and scalable backend service using Golang, PostgreSQL, Gin, and GORM. The service includes essential features like email verification, password hashing, and error handling.
 
