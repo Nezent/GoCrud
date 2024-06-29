@@ -5,7 +5,9 @@ import (
 
 	"github.com/Nezent/GoCrud/config"
 	"github.com/Nezent/GoCrud/models"
+	"github.com/Nezent/GoCrud/utils"
 	"github.com/gin-gonic/gin"
+	"golang.org/x/crypto/bcrypt"
 )
 
 func GetAccount(ctx *gin.Context) {
@@ -17,6 +19,14 @@ func GetAccount(ctx *gin.Context) {
 func CreateAccount(ctx *gin.Context){
 	user := models.User{}
 	ctx.Bind(&user)
+
+	if !utils.EmailValidator(user.Email) {
+        ctx.JSON(http.StatusBadRequest, gin.H{"error": "Invalid email format"})
+        return
+    }
+	hashedPassword, _ := bcrypt.GenerateFromPassword([]byte(user.Password), bcrypt.DefaultCost)
+	user.Password = string(hashedPassword)
+
 	config.DB.Create(&user)
 	ctx.JSON(http.StatusCreated,&user)
 }

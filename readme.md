@@ -100,8 +100,8 @@ The server will start on http://localhost:8080.
 
 - [x] Implement CRUD operations
 - [x] Integrate UUID as Primary Key
-- [ ] Set up email verification
-- [ ] Add password hashing
+- [x] Set up email verification with Regular Expression
+- [x] Add password hashing
 - [ ] Include error handling
 - [ ] **Implement JWT authentication** 🔐
 - [ ] **Add rate limiting** 🚀
