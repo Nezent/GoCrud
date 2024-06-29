@@ -77,22 +77,22 @@ The server will start on http://localhost:8080.
 
 - **Create Account**
     ```
-    POST /
+    POST /api/v1/resources/
     ```
 
 - **Read Account**
     ```
-    GET /
+    GET /api/v1/resources/
     ```
 
 - **Update Account**
     ```
-    PUT /:id
+    PUT /api/v1/resources/:id
     ```
 
 - **Delete Account**
     ```
-    DELETE /:id
+    DELETE /api/v1/resources/:id
     ```
 
 

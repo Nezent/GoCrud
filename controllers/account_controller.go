@@ -16,6 +16,12 @@ func GetAccount(ctx *gin.Context) {
 	ctx.JSON(http.StatusOK,&users)
 }
 
+func GetAccountByID(ctx *gin.Context) {
+	user := models.User{}
+	config.DB.Where("id = ?",ctx.Param("id")).First(&user)
+	ctx.JSON(http.StatusOK,&user)
+}
+
 func CreateAccount(ctx *gin.Context){
 	user := models.User{}
 	ctx.Bind(&user)

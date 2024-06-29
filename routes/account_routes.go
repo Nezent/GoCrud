@@ -5,9 +5,12 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+var resource_api_path = "/api/v1/resources"
+
 func AccountRoute(router *gin.Engine) {
-	router.GET("/", controllers.GetAccount)
-	router.POST("/",controllers.CreateAccount)
-	router.DELETE("/:id",controllers.DeleteAccount)
-	router.PUT("/:id",controllers.UpdateAccount)
+	router.GET(resource_api_path + "/", controllers.GetAccount)
+	router.GET(resource_api_path + "/:id", controllers.GetAccountByID)
+	router.POST(resource_api_path + "/",controllers.CreateAccount)
+	router.DELETE(resource_api_path + "/:id",controllers.DeleteAccount)
+	router.PUT(resource_api_path + "/:id",controllers.UpdateAccount)
 }
